@@ -12,7 +12,7 @@ Thanks for helping! You don't need SO-101 hardware to contribute: most of the co
 ## 2. Set up
 
 ```bash
-git clone https://github.com/nourelshawaf/so101-sim-teleop.git && cd so101-sim-teleop
+git clone https://github.com/nourelshawaf/Digital-Twin-SO101.git && cd Digital-Twin-SO101
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python sim_teleop.py --mock-robots          # full workflow, no hardware

@@ -11,8 +11,8 @@ Do the steps in order. Each one is safe without the next.
 Requirements: Python 3.10+ (tested with 3.12), a desktop session (the app opens two windows), and Linux, Windows or macOS.
 
 ```bash
-git clone https://github.com/nourelshawaf/so101-sim-teleop.git
-cd so101-sim-teleop
+git clone https://github.com/nourelshawaf/Digital-Twin-SO101.git
+cd Digital-Twin-SO101
 python -m venv .venv
 source .venv/bin/activate            # Windows: .venv\Scripts\activate
 pip install -r requirements.txt

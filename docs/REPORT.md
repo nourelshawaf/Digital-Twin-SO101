@@ -1,6 +1,6 @@
 # SO-101 Bimanual Sim-to-Real Teleoperation — Project Report
 
-**Repository:** `so101-sim-teleop` · **Stack:** Python 3.12, MuJoCo 4.0, LeRobot 0.7 (Feetech STS3215 bus), Tkinter
+**Repository:** `Digital-Twin-SO101` · **Stack:** Python 3.12, MuJoCo 4.0, LeRobot 0.7 (Feetech STS3215 bus), Tkinter
 **Demo:** [`docs/media/demo.mp4`](media/demo.mp4)
 
 ![demo](media/demo.gif)

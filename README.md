@@ -6,7 +6,7 @@ No webcam or MediaPipe is used.
 
 ![demo](docs/media/demo.gif)
 
-▶ **[Demo video (MP4)](docs/media/demo.mp4)** · 📘 **[Getting started guide](docs/GETTING_STARTED.md)** · 📄 **[Project report](docs/REPORT.md)**
+▶ **[Demo video (MP4)](docs/media/demo.mp4)** · 📘 **[Getting started guide](docs/GETTING_STARTED.md)** · 📄 **[Project report](docs/REPORT.md)** · 🗺️ **[Roadmap](ROADMAP.md)** · 🤝 **[Contributing](CONTRIBUTING.md)**
 
 ## Quick start
 
@@ -72,3 +72,8 @@ Record the fold once by moving the REAL arms by hand, then replay it as often as
 ## Calibration backup
 `calibration/` holds copies of the LeRobot calibration files used with this app (right shoulder lift re-recorded,
 848..3116). To restore: copy them to `~/.cache/huggingface/lerobot/calibration/robots/so_follower/`.
+
+## Contributing
+Ideas for the next versions, from 🟢 good-first-issues (tests, CI, Linux port auto-detect) to 🔴 big ones
+(IK teleop, collision guard, LeRobot datasets, learned folding policies), are listed in [ROADMAP.md](ROADMAP.md).
+No hardware needed for most of them: use `--mock-robots`. Start with [CONTRIBUTING.md](CONTRIBUTING.md).

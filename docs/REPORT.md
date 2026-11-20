@@ -135,6 +135,8 @@ A slow or failing arm therefore cannot freeze the UI or the other arm.
 3. Locate the shirt with a fixed overhead camera to offset the taught waypoints (closed-loop start pose).
 4. Log replays with `lerobot-record` to build a dataset for imitation learning (ACT / diffusion policy).
 
+More ideas, sized and pointed at the code, are in [ROADMAP.md](../ROADMAP.md).
+
 ## 8. Credits
 
 The SO-101 model is from MuJoCo Menagerie (`robotstudio_so101/`, Apache-2.0). The arm hardware and calibration come from TheRobotStudio / Hugging Face LeRobot.

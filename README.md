@@ -4,6 +4,22 @@ One application: two SO-101 arms in MuJoCo plus a control panel. You move the si
 the physical arms (COM7 = left, COM9 = right) reproduce the simulated joint positions.
 No webcam or MediaPipe is used.
 
+![demo](docs/media/demo.gif)
+
+▶ **[Demo video (MP4)](docs/media/demo.mp4)** · 📘 **[Getting started guide](docs/GETTING_STARTED.md)** · 📄 **[Project report](docs/REPORT.md)**
+
+## Quick start
+
+```bash
+pip install -r requirements.txt
+python sim_teleop.py                    # simulation only (safe default)
+python sim_teleop.py --mock-robots      # rehearse the real-arm workflow without hardware
+python sim_teleop.py --left-port /dev/ttyACM0 --right-port /dev/ttyACM1   # real arms (Linux)
+```
+
+Then in the control panel: **K** connect → **V** verify mapping → **ENTER** follow → **F** fold. **Esc** = emergency stop.
+Full step-by-step instructions are in [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
+
 ## Files
 
 | File | Role |
@@ -14,6 +30,8 @@ No webcam or MediaPipe is used.
 | `real_robot_controller.py` | LeRobot SO-101 follower wrapper (your existing calibration) + mock arm for testing |
 | `motion_sequence.py` | Teach & replay: record waypoints (P), play them back smoothly (O); saved in `fold_tshirt.json` |
 | `joint_mapping.py` | Sim radians <-> real degrees, direction per joint, gripper scale, calibrated limits |
+| `tools/record_demo.py` | Renders the demo video offscreen (same scene + replay player as the app) |
+| `docs/` | Getting-started guide, project report, demo video |
 | `robotstudio_so101/` | SO-101 model from MuJoCo Menagerie (Apache-2.0) |
 
 `hand_teleop_bimanual.py` (webcam) is not used by this app and was not changed.

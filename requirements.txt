@@ -1,0 +1,5 @@
+# Tested with Python 3.12, mujoco 4.0.1, lerobot 0.7.0, numpy 2.2
+mujoco>=3.3
+numpy
+lerobot[feetech]   # only needed for the real arms; the simulation runs without it
+opencv-python      # only needed for tools/record_demo.py

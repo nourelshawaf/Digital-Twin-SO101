@@ -77,3 +77,6 @@ Record the fold once by moving the REAL arms by hand, then replay it as often as
 Ideas for the next versions, from 🟢 good-first-issues (tests, CI, Linux port auto-detect) to 🔴 big ones
 (IK teleop, collision guard, LeRobot datasets, learned folding policies), are listed in [ROADMAP.md](ROADMAP.md).
 No hardware needed for most of them: use `--mock-robots`. Start with [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+[Apache-2.0](LICENSE). The SO-101 model in `robotstudio_so101/` is from MuJoCo Menagerie, also Apache-2.0.
